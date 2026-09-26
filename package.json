@@ -1,0 +1,28 @@
+{
+  "name": "lld-practice-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A focused practice platform for Low-Level Design with iterative rubric evaluation",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "test:server": "npm --prefix server test",
+    "test:client": "npm --prefix client test",
+    "seed": "npm --prefix server run seed",
+    "lint": "npm --prefix server run lint && npm --prefix client run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "low-level-design",
+    "lld",
+    "software-engineering",
+    "practice-platform"
+  ],
+  "author": "",
+  "license": "MIT"
+}
